@@ -1,0 +1,101 @@
+<html>
+<head>
+<title> DESIGN OF FLEXBOXES</title>
+<style>
+.flex-container{
+
+width: 360px;
+height:64px;
+}
+
+#a{
+
+width:360px;
+height:114px;
+opacity:1;
+background-color:#A5F2F3;
+}
+#a:hover{
+opacity:0.5;
+}
+#b{
+
+width:360px;
+height:114px;
+transition:width 2s,height 2s;
+background-color:brown;
+}
+
+#b:hover{
+width:300px;
+height:300px;
+}
+#c{
+
+width:360px;
+height:114px;
+transition: width 2s, height 2s, transform 2s;
+background-color:yellow;
+}
+#c:hover{
+
+width:300px;
+height:300px;
+transform:rotate(180deg);
+}
+#d{
+
+width:360px;
+height:114px;
+animation-name: deepak;
+animation-duration:8s;
+position:relative;
+animation:deepak 25s ; 
+animation: deepak 25s ;
+background-color:#7CFC00;
+}
+@keyframes deepak {
+    0%   { left: 0px; background: #A5F2F3;}
+    25%  { left: 100px; background: brown;}
+    50%  { left: 100px; background: yellow;}
+    75%  {left: 100px; background: blue;}
+    100% { left: 100px; background: #7CFC00;}
+}
+
+@-webkit-keyframes deepak{
+
+     0%   { left:250px;}
+     25% {down:250px;left:250px;}
+    
+
+}
+#e{
+
+width:360px;
+height:114px;
+background-color:darkblue;
+opacity:0.2;
+}
+
+#e:hover{
+
+opacity:1;
+
+}
+
+</style>
+<head>
+<body>
+<div class="container">
+<div class="flex-container">
+
+<div class="flex-item"id="a" >  </div>
+<div class="flex-item"id="b"></DIV>
+<div class="flex-item"id="c" >  </div>
+<div class="flex-item"id="d" >  </div>
+<div class="flex-item"id="e" >  </div>
+</div>
+</div>
+
+</body>
+</html>

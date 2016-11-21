@@ -1,0 +1,70 @@
+<html>
+<head>
+<title> Flexbox desktop</title>
+<style>
+#a{
+width:max-width;
+height:180px;
+background-color:brown;
+margin:0px; 
+animation: deepak 3s infinite;
+}
+
+#b
+{background-color:skyblue;
+width:675px; 
+height:300px;}
+
+#c{background-color:#00ff00;
+ width:675px;
+ height:250px;
+ animation: deepak1 3s infinite;}
+
+.flex-container2{
+display:flex;
+flex-direction: row;
+}
+
+#d{background-color:yellow; 
+width:675px; 
+height:152px;}
+
+#e{background-color:#191970; 
+width:675px; 
+height:252px; 
+margin-top:-100px;}
+
+.flex-container3{
+display:flex;
+flex-direction:row ;
+}
+@keyframes deepak {
+    0%   { background: brown;}
+    25%  {  background: #00ff00;}
+}
+
+@keyframes deepak1 {
+    0%   { background: #00ff00;}
+    25%  {  background: brown;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item" id="a"></div>
+ </div>
+  
+  <div class="flex-container2">
+      <div class="flex-item" id="b"></div>
+	  <div class="flex-item" id="c"></div>
+	</div>  
+	
+	<div class="flex-container3">
+	   <div class="flex-item" id="d"></div>
+	  <div class="flex-item" id="e"></div>
+	</div>
+  
+
+</body>
+</html>
